@@ -108,6 +108,25 @@ public class LinkedList {
     public int getSize(){
         return size;
     }
+    
+    public void reverse(){
+        if(size <= 1){
+            return;
+        }else{
+            Node pointer1 = first;
+            Node pointer2 = pointer1.next;
+            while(pointer2 != null){
+                Node pointer3 = pointer2.next;
+                pointer2.next = pointer1;
+                pointer1 = pointer2;
+                pointer2 = pointer3;
+            }
+            
+            first.next = null;
+            last = first;
+            first = pointer1;
+        }
+    }
 
     private Node getPrevious(Node node){
         Node current = first;
