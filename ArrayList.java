@@ -1,5 +1,3 @@
-package com.datastructures;
-
 import java.util.Arrays;
 
 public class ArrayList {

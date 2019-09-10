@@ -1,5 +1,3 @@
-package com.datastructures;
-
 import java.util.NoSuchElementException;
 
 public class LinkedList {
